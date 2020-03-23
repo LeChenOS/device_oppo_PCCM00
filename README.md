@@ -1,7 +1,7 @@
-# android_device_realme_RMX1931
-For building TWRP for Realme X2 Pro
+# android_device_oppo_PCCM00
+For building TWRP for OPPO Reno 10x zoom
 
-TWRP device tree for Realme X2 Pro
+TWRP device tree for OPPO Reno 10x zoom
 
 ## Features
 
@@ -32,21 +32,21 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/realme/RMX1931" name="mauronofrio/android_device_realme_RMX1931" remote="github" revision="android-9.0" />
+<project path="device/oppo/PCCM00" name="lechenos/device_oppo_PCCM00" remote="github" revision="android-9.0" />
 ```
 
 Finally execute these:
 
 ```
 . build/envsetup.sh
-lunch omni_RMX1931-eng
+lunch omni_PCCM00-eng
 mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
 ```
 
 To test it:
 
 ```
-fastboot boot out/target/product/RMX1931/recovery.img
+fastboot boot out/target/product/PCCM00/recovery.img
 ```
 
 ## Other Sources
