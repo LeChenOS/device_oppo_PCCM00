@@ -44,11 +44,11 @@ namespace android {
 namespace init {
 
 void load_CN() {
-    property_set("ro.product.device", "RMX1931CN");
+    property_set("ro.product.device", "PCCM00");
 }
 
 void load_IN() {
-    property_set("ro.product.device", "RMX1931");
+    property_set("ro.product.device", "CPH1919");
 }
 
 void vendor_load_properties() {
