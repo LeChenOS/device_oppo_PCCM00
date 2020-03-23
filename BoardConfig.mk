@@ -51,7 +51,7 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/oppo/PCCM00/prebuilt/Image.gz-dtb
 #BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 #BOARD_INCLUDE_RECOVERY_DTBO := true
 #BOARD_BOOTIMG_HEADER_VERSION := 1
@@ -133,3 +133,19 @@ TW_SKIP_COMPATIBILITY_CHECK := true
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
+
+# Maintainer name
+SHRP_MAINTAINER := LeChenOS
+# Device codename
+SHRP_DEVICE_CODE := PCCM00
+
+# put this 0 if device has no EDL mode
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+# Put 0 to disable flashlight
+SHRP_FLASH := 1
+
+#check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
