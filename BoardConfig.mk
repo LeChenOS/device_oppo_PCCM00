@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX1931
+DEVICE_PATH := device/oppo/PCCM00
 
 # Architecture
 TARGET_ARCH := arm64
