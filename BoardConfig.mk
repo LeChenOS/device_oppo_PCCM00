@@ -149,3 +149,6 @@ SHRP_FLASH := 1
 
 #check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
+
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A/B
